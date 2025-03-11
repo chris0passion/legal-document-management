@@ -1,38 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
 .App {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.doc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.doc-box {
+  flex: 1 1 calc(33% - 30px);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.doc-title {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.doc-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.drag-area {
+  background: #e0e0e0;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.drag-area.dragover {
+  background: #d0d0d0;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.details-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90vh;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewer {
+  flex: 2;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.extractions {
+  flex: 1;
+  padding: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
