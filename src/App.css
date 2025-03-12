@@ -106,26 +106,33 @@ header {
   z-index: 999;
 }
 
+/* Add a separator line between modal-header and modal-content */
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #0f0000; /* Separation line */
+  padding-bottom: 10px; /* Adds spacing below the header */
 }
 
 .modal-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px; /* Adds spacing above the content */
 }
 
+/* Add a separator line between viewer and extractions */
 .viewer {
   flex: 2;
   max-height: 70vh;
   overflow: auto;
+  border-right: 1px solid #0c0000; /* Separation line */
+  padding-right: 10px; /* Adds spacing from the separation line */
 }
 
 .extractions {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
 }
 
 .button-group {
@@ -141,7 +148,7 @@ header {
   align-items: center;
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 4px 8px;
   margin-bottom: 8px;
   background-color: #f9f9f9;
 }
