@@ -134,3 +134,33 @@ header {
   justify-content: flex-end;
   gap: 10px;
 }
+
+.extraction-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+}
+
+.extraction-entry span {
+  font-size: 14px;
+  color: #333;
+}
+
+.extraction-entry button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.extraction-entry button:hover {
+  background-color: #0056b3;
+}

@@ -202,8 +202,10 @@ const App: React.FC = () => {
           <div className="extractions">
             <h3>Mock Extractions</h3>
             {mockExtractions.map((entry, i) => (
-              <div key={i}>
-                {entry.key} - Page {entry.page}{" "}
+              <div key={i} className="extraction-entry">
+                <span>
+                  {entry.key} - Page {entry.page}
+                </span>
                 <button onClick={() => jumpToPage(entry.page - 1)}>
                   Go To Page
                 </button>
