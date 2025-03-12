@@ -171,3 +171,23 @@ header {
 .extraction-entry button:hover {
   background-color: #0056b3;
 }
+
+.circular-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(78, 66, 66);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.circular-button:hover {
+  background-color: rgb(226, 217, 217);
+  color: #000;
+}

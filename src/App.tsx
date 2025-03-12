@@ -186,7 +186,12 @@ const App: React.FC = () => {
       >
         <div className="modal-header">
           <h2>Legal Document {selectedDoc !== null ? selectedDoc + 1 : ""}</h2>
-          <button onClick={() => setIsDetailsModalOpen(false)}>X</button>
+          <button
+            className="circular-button"
+            onClick={() => setIsDetailsModalOpen(false)}
+          >
+            X
+          </button>
         </div>
         <div className="modal-content">
           <div className="viewer">
